@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Trip Actions</string>
+    <string name="action_share_to_facebook">Share to Facebook</string>
+    <string name="action_send_email">Send Email</string>
+    <string name="hint">Search</string>
+    <string name="search">Go</string>
+    <string name="facebook_app_id">747773152530902</string>
+</resources>
