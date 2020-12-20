@@ -1,4 +1,4 @@
-package com.nguyen.tripactions
+package com.nguyen.tripactions.views
 
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager

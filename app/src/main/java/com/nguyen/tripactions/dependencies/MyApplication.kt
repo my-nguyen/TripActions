@@ -1,4 +1,4 @@
-package com.nguyen.tripactions
+package com.nguyen.tripactions.dependencies
 
 import android.app.Application
 

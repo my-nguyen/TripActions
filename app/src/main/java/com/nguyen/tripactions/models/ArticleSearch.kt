@@ -1,4 +1,4 @@
-package com.nguyen.tripactions
+package com.nguyen.tripactions.models
 
 data class ArticleSearch(val response: Response)
 

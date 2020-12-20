@@ -1,4 +1,4 @@
-package com.nguyen.tripactions
+package com.nguyen.tripactions.views
 
 import android.content.Context
 import android.content.Intent
@@ -9,7 +9,9 @@ import android.view.MenuItem
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
+import com.nguyen.tripactions.R
 import com.nguyen.tripactions.databinding.ActivityDetailBinding
+import com.nguyen.tripactions.models.Article
 
 class DetailActivity : AppCompatActivity() {
     companion object {

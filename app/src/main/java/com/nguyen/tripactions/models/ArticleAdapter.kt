@@ -1,4 +1,4 @@
-package com.nguyen.tripactions
+package com.nguyen.tripactions.models
 
 import android.content.Context
 import android.text.TextUtils
@@ -11,6 +11,7 @@ import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.request.RequestOptions
 import com.nguyen.tripactions.databinding.ItemArticleBinding
+import com.nguyen.tripactions.views.DetailActivity
 
 class ArticleAdapter(val context: Context, val articles: List<Article>) :
     RecyclerView.Adapter<ArticleAdapter.ViewHolder>() {

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_marginTop="8dp"
     android:padding="@dimen/activity_horizontal_margin"
-    tools:context=".MainActivity">
+    tools:context=".views.MainActivity">
 
     <TextView
         android:id="@+id/label_logo"

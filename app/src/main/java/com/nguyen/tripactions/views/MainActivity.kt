@@ -1,4 +1,4 @@
-package com.nguyen.tripactions
+package com.nguyen.tripactions.views
 
 import android.app.Activity
 import android.os.Bundle
@@ -10,7 +10,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.nguyen.tripactions.*
 import com.nguyen.tripactions.databinding.ActivityMainBinding
+import com.nguyen.tripactions.dependencies.MyApplication
+import com.nguyen.tripactions.models.Article
+import com.nguyen.tripactions.models.ArticleAdapter
+import com.nguyen.tripactions.viewmodels.MainViewModel
 import java.text.SimpleDateFormat
 import java.util.*
 import javax.inject.Inject

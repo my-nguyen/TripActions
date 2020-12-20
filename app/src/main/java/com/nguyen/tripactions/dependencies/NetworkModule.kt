@@ -1,5 +1,6 @@
-package com.nguyen.tripactions
+package com.nguyen.tripactions.dependencies
 
+import com.nguyen.tripactions.models.NYTimesService
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit

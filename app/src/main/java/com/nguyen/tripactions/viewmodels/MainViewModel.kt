@@ -1,7 +1,9 @@
-package com.nguyen.tripactions
+package com.nguyen.tripactions.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
+import com.nguyen.tripactions.models.Article
+import com.nguyen.tripactions.models.ArticleRepository
 import javax.inject.Inject
 
 class MainViewModel @Inject constructor(private val repository: ArticleRepository) : ViewModel() {
