@@ -9,11 +9,7 @@ import android.view.MenuItem
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
-import com.facebook.CallbackManager
-import com.facebook.share.model.ShareLinkContent
-import com.facebook.share.widget.ShareDialog
 import com.nguyen.tripactions.databinding.ActivityDetailBinding
-
 
 class DetailActivity : AppCompatActivity() {
     companion object {

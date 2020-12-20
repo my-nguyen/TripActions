@@ -13,7 +13,6 @@ import javax.inject.Singleton
 class ArticleRepository @Inject constructor(private val NYTimesService: NYTimesService) {
     companion object {
         const val TAG = "ArticleRepository"
-        const val NYTIMES_API_KEY = "OKsEwghCzAPR3kRr7Hp51cFn2tMfXWgj"
     }
 
     private val homeArticles: MutableLiveData<List<Article>> = MutableLiveData()
@@ -21,7 +20,7 @@ class ArticleRepository @Inject constructor(private val NYTimesService: NYTimesS
     private var savedQuery: String? = null
 
     fun home() : LiveData<List<Article>> {
-        NYTimesService.home(NYTIMES_API_KEY)
+        NYTimesService.home(BuildConfig.NYTIMES_API_KEY)
             .enqueue(object : Callback<Home> {
                 override fun onResponse(call: Call<Home>, response: Response<Home>) {
                     val articles = mutableListOf<Article>()
@@ -44,7 +43,7 @@ class ArticleRepository @Inject constructor(private val NYTimesService: NYTimesS
     }
 
     fun articleSearch(query: String, page: Int): LiveData<List<Article>> {
-        NYTimesService.articleSearch(query, page, NYTIMES_API_KEY)
+        NYTimesService.articleSearch(query, page, BuildConfig.NYTIMES_API_KEY)
             .enqueue(object : Callback<ArticleSearch> {
                 override fun onResponse(call: Call<ArticleSearch>, response: Response<ArticleSearch>) {
                     val articles = mutableListOf<Article>()
