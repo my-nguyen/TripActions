@@ -1,9 +1,12 @@
 package com.nguyen.tripactions.models
 
+import android.content.Context
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.nguyen.tripactions.BuildConfig
+import com.nguyen.tripactions.DbArticle
+import com.nguyen.tripactions.getDatabase
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -32,6 +35,21 @@ class ArticleRepository @Inject constructor(private val NYTimesService: NYTimesS
                             articles.add(article)
                         }
                         homeArticles.value = articles
+
+                        /*val dao = getDatabase(context).articleDao
+                        dao.deleteAll()
+                        val dbArticles = articles.map {
+                            DbArticle(
+                                section = it.section,
+                                subsection = it.subsection,
+                                title = it.title,
+                                abstract = it.abstract,
+                                webUrl = it.webUrl,
+                                byline = it.byline,
+                                imageUrl = it.imageUrl
+                            )
+                        }
+                        dao.insertAll(dbArticles)*/
                     }
                 }
 

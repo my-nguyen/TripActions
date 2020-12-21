@@ -7,7 +7,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 @Module
-class NetworkModule {
+class NetworkModule() {
     companion object {
         const val BASE_URL = "https://api.nytimes.com/svc/"
     }

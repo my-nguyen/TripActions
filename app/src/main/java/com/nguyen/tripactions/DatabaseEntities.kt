@@ -12,7 +12,8 @@ data class DbArticle constructor(
     var subsection: String? = "",
     var title: String = "",
     var abstract: String = "",
-    var byline: String? = ""
+    var byline: String? = "",
+    var imageUrl: String? = ""
 )
 
 fun List<DbArticle>.asDomainModel(): List<Article> {

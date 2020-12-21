@@ -11,6 +11,9 @@ interface ArticleDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAll(articles: List<DbArticle>)
+
+    @Query("DELETE FROM Articles")
+    fun deleteAll()
 }
 
 @Database(entities = [DbArticle::class], version = 1)
