@@ -14,4 +14,4 @@ I tried to polish this app as much as I could while fulfilling the requirements 
 7. Upon clicking any article on either the headlined articles or the articles from a query, a detail view appears.  
    a. To preserve the integrity of the original NYT article, including font size, arrangements, links, pictures, a WebView was employed to display the article in its details via its URL.  
    b. In the detail view, there is a menu item thru which you can email a link of the article.
-8. Aside from MVVM, other Android best practices are employed, such as dependency injection with Dagger, Room database, etc.
+8. Aside from MVVM, another Android best practice is employed, namely dependency injection with Dagger.
